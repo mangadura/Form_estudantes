@@ -1,57 +1,39 @@
+1. O QUE VEM NESTE PACOTE (.ZIP)
 
-GUIA DE EXECUÇÃO, CAPTURAS DE TELA E EXPLICAÇÃO DO CÓDIGO
-1. ARQUIVOS INCLUÍDOS NESTE PACOTE (.ZIP)
-- Main.java: Código-fonte completo e corrigido do Sistema de
-  Gerenciamento Escolar (compatível com Java 8, 11, 17, 21 e 22+).
-- relatorio.txt: Exemplo de relatório gerado automaticamente pela
-  opção 6 do programa contendo 5 alunos fictícios.
-- GUIA_EXECUCAO_E_EXPLICACAO.txt: Este roteiro de apoio.
+Main.java: É o código do programa da escola pronto e sem erros (funciona em praticamente qualquer versão do Java instalada no PC).
 
-2. COMO COMPILAR E EXECUTAR NO COMPUTADOR
-Pelo Terminal / Prompt de Comando (na pasta onde está o Main.java):
-  javac -encoding UTF-8 Main.java
-  java Main
-Ou abra o arquivo Main.java diretamente no IntelliJ IDEA, Eclipse,
-NetBeans ou VS Code (com Extension Pack for Java) e clique em "Run".
-3. MAPEAMENTO DOS CONCEITOS EXIGIDOS NO CÓDIGO
-- Classes, objetos, atributos e construtores:
-  Classe Aluno com atributos privados (nome, turma, nota1, nota2),
-  construtor Aluno(...) e instanciação de objetos (new Aluno(...))
-  na classe Main.
+relatorio.txt: Um arquivo de bloco de notas comum que o próprio programa cria sozinho (na opção 6), já preenchido com 5 alunos inventados de exemplo.
 
-- Variáveis e tipos de dados (String, int, double):
-  String (nome, turma, buscas, nomeArquivo), int (opcao, índices i,
-  total, aprovados, recuperacao), double (nota1, nota2, mediaGeral).
+GUIA_EXECUCAO_E_EXPLICACAO.txt: Este texto explicativo que você está lendo agora.
 
-- Métodos, parâmetros e return:
-  Métodos com parâmetros e retorno como calcularMedia(),
-  verificarSituacao(), formatarResumo(), calcularMediaGeral(...),
-  lerNotaValida(...) e lerInteiro(...).
+2. COMO LIGAR O PROGRAMA NO COMPUTADOR
 
-- Estruturas condicionais (if, else):
-  Verificação de aprovação (média >= 6.0 -> Aprovado / else ->
-  Recuperação), validação de notas (0 a 10) e verificação de lista
-  vazia (listaAlunos.size() == 0).
+Pelo jeito mais fácil: Abra o arquivo Main.java no programa que você usa para programar (VS Code, IntelliJ, Eclipse ou NetBeans) e clique no botão de "Play" (Run).
 
-- Estruturas de repetição (for, for-each):
-  Laço for tradicional com índice i (listarAlunos, removerAluno e
-  cópia para Aluno[]) e laço for-each (pesquisarAluno,
-  consultarSituacao, alterarNotasAluno, estatísticas e média geral).
+Pela tela preta (Terminal / Prompt): Abra o terminal dentro da pasta onde está o arquivo, digite os dois comandos abaixo (apertando Enter depois de cada um):javac -encoding UTF-8 Main.java (prepara o código)java Main (liga o programa)
 
-- Arrays de referências e ArrayList:
-  ArrayList<Aluno> para armazenamento dinâmico dos alunos e array de
-  referências Aluno[] (new Aluno[listaAlunos.size()]) na opção 6
-  para gravação do relatório.
+3. O QUE CADA PARTE DO CÓDIGO FAZ (SEM TERMOS DIFÍCEIS)
 
-- Método equals() ou equalsIgnoreCase():
-  equalsIgnoreCase() utilizado para comparar nomes sem diferenciar
-  maiúsculas e minúsculas nas buscas, remoção, edição e cadastro.
+Classes, objetos, atributos e construtores: É o molde da ficha do aluno. A classe Aluno é a ficha em branco (com espaço para nome, turma e duas notas). Cada vez que você cadastra alguém, o código preenche uma ficha nova dessas.
 
-- Operações com listas (add, remove, get, size):
-  add() no cadastro, remove() na exclusão, get() para acessar itens
-  por índice e size() para verificar tamanho e controlar laços.
+Variáveis e tipos de dados: São as "caixinhas" onde o programa guarda as informações:
 
-- Leitura e escrita de arquivos com java.io:
-  FileWriter e BufferedWriter para gravar relatorio.txt; File,
-  FileReader e BufferedReader para ler e exibir o arquivo no console.
-====================================================================
+String: guarda textos (nomes, turmas).
+
+int: guarda números inteiros (opções do menu, quantidade de alunos).
+
+double: guarda números quebrados com vírgula (notas e médias).
+
+Métodos, parâmetros e return: São mini-tarefas prontas para o código não precisar repetir conta. Você entrega as notas para o método, ele calcula a média e devolve (return) o resultado pronto.
+
+Estruturas condicionais (if, else): São as decisões do programa ("Se" e "Senão"). Exemplo: se a média for 6 ou mais, escreve "Aprovado"; senão, escreve "Recuperação". Também serve para barrar notas erradas (menores que 0 ou maiores que 10) e avisar se a lista estiver vazia.
+
+Estruturas de repetição (for, for-each): É quando o programa precisa fazer a mesma tarefa várias vezes seguidas sem parar — como passar de aluno em aluno para mostrar todo mundo na tela ou somar a nota da turma inteira.
+
+Arrays e ArrayList: São as listas onde os alunos ficam guardados enquanto o programa está aberto. O ArrayList é uma lista elástica que cresce sozinha conforme você adiciona alunos; o Aluno[] é uma lista de tamanho fixo usada na opção 6 para montar o relatório.
+
+equalsIgnoreCase(): É um filtro para o programa entender que "Maria", "maria" e "MARIA" são a mesma pessoa quando você busca, edita ou apaga alguém.
+
+Operações com listas (add, remove, get, size): São os comandos básicos para mexer na lista: add coloca um aluno novo, remove apaga, get pega um aluno específico pela posição e size conta quantos alunos existem ao todo.
+
+Leitura e escrita de arquivos (java.io): É a parte que salva tudo no computador para não sumir quando você fechar o programa. Ele cria o arquivo relatorio.txt, escreve os dados lá dentro e depois consegue ler esse mesmo arquivo para mostrar na tela.
