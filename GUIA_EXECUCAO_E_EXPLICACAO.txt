@@ -1,0 +1,66 @@
+====================================================================
+GUIA DE EXECUÇÃO, CAPTURAS DE TELA E EXPLICAÇÃO DO CÓDIGO
+====================================================================
+
+1. ARQUIVOS INCLUÍDOS NESTE PACOTE (.ZIP)
+--------------------------------------------------------------------
+- Main.java: Código-fonte completo e corrigido do Sistema de
+  Gerenciamento Escolar (compatível com Java 8, 11, 17, 21 e 22+).
+- relatorio.txt: Exemplo de relatório gerado automaticamente pela
+  opção 6 do programa contendo 5 alunos fictícios.
+- GUIA_EXECUCAO_E_EXPLICACAO.txt: Este roteiro de apoio.
+
+
+2. COMO COMPILAR E EXECUTAR NO COMPUTADOR
+--------------------------------------------------------------------
+Pelo Terminal / Prompt de Comando (na pasta onde está o Main.java):
+  javac -encoding UTF-8 Main.java
+  java Main
+
+Ou abra o arquivo Main.java diretamente no IntelliJ IDEA, Eclipse,
+NetBeans ou VS Code (com Extension Pack for Java) e clique em "Run".
+
+
+3. MAPEAMENTO DOS CONCEITOS EXIGIDOS NO CÓDIGO
+--------------------------------------------------------------------
+- Classes, objetos, atributos e construtores:
+  Classe Aluno com atributos privados (nome, turma, nota1, nota2),
+  construtor Aluno(...) e instanciação de objetos (new Aluno(...))
+  na classe Main.
+
+- Variáveis e tipos de dados (String, int, double):
+  String (nome, turma, buscas, nomeArquivo), int (opcao, índices i,
+  total, aprovados, recuperacao), double (nota1, nota2, mediaGeral).
+
+- Métodos, parâmetros e return:
+  Métodos com parâmetros e retorno como calcularMedia(),
+  verificarSituacao(), formatarResumo(), calcularMediaGeral(...),
+  lerNotaValida(...) e lerInteiro(...).
+
+- Estruturas condicionais (if, else):
+  Verificação de aprovação (média >= 6.0 -> Aprovado / else ->
+  Recuperação), validação de notas (0 a 10) e verificação de lista
+  vazia (listaAlunos.size() == 0).
+
+- Estruturas de repetição (for, for-each):
+  Laço for tradicional com índice i (listarAlunos, removerAluno e
+  cópia para Aluno[]) e laço for-each (pesquisarAluno,
+  consultarSituacao, alterarNotasAluno, estatísticas e média geral).
+
+- Arrays de referências e ArrayList:
+  ArrayList<Aluno> para armazenamento dinâmico dos alunos e array de
+  referências Aluno[] (new Aluno[listaAlunos.size()]) na opção 6
+  para gravação do relatório.
+
+- Método equals() ou equalsIgnoreCase():
+  equalsIgnoreCase() utilizado para comparar nomes sem diferenciar
+  maiúsculas e minúsculas nas buscas, remoção, edição e cadastro.
+
+- Operações com listas (add, remove, get, size):
+  add() no cadastro, remove() na exclusão, get() para acessar itens
+  por índice e size() para verificar tamanho e controlar laços.
+
+- Leitura e escrita de arquivos com java.io:
+  FileWriter e BufferedWriter para gravar relatorio.txt; File,
+  FileReader e BufferedReader para ler e exibir o arquivo no console.
+====================================================================

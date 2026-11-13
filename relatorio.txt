@@ -1,0 +1,12 @@
+==========================================================================
+                   RELATÓRIO ESCOLAR - SISTEMA JAVA
+==========================================================================
+1. Nome: Ana Beatriz Silva | Turma: 2A | Nota 1: 8.5 | Nota 2: 9.0 | Média: 8.8 | Situação: Aprovado
+2. Nome: Bruno Henrique Costa | Turma: 2A | Nota 1: 5.0 | Nota 2: 5.5 | Média: 5.3 | Situação: Recuperação
+3. Nome: Carla Mendes Oliveira | Turma: 2B | Nota 1: 7.0 | Nota 2: 6.5 | Média: 6.8 | Situação: Aprovado
+4. Nome: Diego Santos Pereira | Turma: 2B | Nota 1: 4.0 | Nota 2: 6.0 | Média: 5.0 | Situação: Recuperação
+5. Nome: Eduarda Rocha Lima | Turma: 2A | Nota 1: 9.5 | Nota 2: 10.0 | Média: 9.8 | Situação: Aprovado
+--------------------------------------------------------------------------
+Total de alunos cadastrados: 5
+Média geral da turma: 7.10
+==========================================================================
