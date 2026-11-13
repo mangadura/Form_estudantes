@@ -1,28 +1,19 @@
-====================================================================
-GUIA DE EXECUÇÃO, CAPTURAS DE TELA E EXPLICAÇÃO DO CÓDIGO
-====================================================================
 
+GUIA DE EXECUÇÃO, CAPTURAS DE TELA E EXPLICAÇÃO DO CÓDIGO
 1. ARQUIVOS INCLUÍDOS NESTE PACOTE (.ZIP)
---------------------------------------------------------------------
 - Main.java: Código-fonte completo e corrigido do Sistema de
   Gerenciamento Escolar (compatível com Java 8, 11, 17, 21 e 22+).
 - relatorio.txt: Exemplo de relatório gerado automaticamente pela
   opção 6 do programa contendo 5 alunos fictícios.
 - GUIA_EXECUCAO_E_EXPLICACAO.txt: Este roteiro de apoio.
 
-
 2. COMO COMPILAR E EXECUTAR NO COMPUTADOR
---------------------------------------------------------------------
 Pelo Terminal / Prompt de Comando (na pasta onde está o Main.java):
   javac -encoding UTF-8 Main.java
   java Main
-
 Ou abra o arquivo Main.java diretamente no IntelliJ IDEA, Eclipse,
 NetBeans ou VS Code (com Extension Pack for Java) e clique em "Run".
-
-
 3. MAPEAMENTO DOS CONCEITOS EXIGIDOS NO CÓDIGO
---------------------------------------------------------------------
 - Classes, objetos, atributos e construtores:
   Classe Aluno com atributos privados (nome, turma, nota1, nota2),
   construtor Aluno(...) e instanciação de objetos (new Aluno(...))
